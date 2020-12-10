@@ -38,115 +38,108 @@
           </div>
         </nav>
       </header>
-      <main class="page-main">
-        <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <main class="page-form">
         <div class="form-group">
           <div class="form-group__wrapper">
+            <div class="form-group__background">
+              <h1 class="form-group__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+            </div>
             <p class="form-group__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-            <form class="form-group__content" action="https://echo.htmlacademy.ru" method="post">
-              <fieldset class="fieldset1 fieldset">
+
+            <form class="form" action="https://echo.htmlacademy.ru" method="post">
+              <fieldset class="form__fieldset fieldset">
                 <legend class="visually-hidden">Анкетные данные</legend>
-                <ul class="fieldset1__list" role="none">
-                  <li class="fieldset1__item">
-                    <label for="surname-field">Фамилия:</label>
-                    <input type="text" name="surname" id="surname-field" placeholder="Укажите фамилию *" required>
+                <ul class="fieldset__list" role="none">
+                  <li class="fieldset__item">
+                    <label class="fieldset__label" for="surname-field">Фамилия:</label>
+                    <input class="fieldset__input" type="text" name="surname" id="surname-field" placeholder="Укажите фамилию *" required>
                   </li>
-                  <li class="fieldset1__item">
-                    <label for="name-field">Имя:</label>
-                    <input type="text" name="name" id="name-field" placeholder="Введите ваше имя *" required>
+                  <li class="fieldset__item">
+                    <label class="fieldset__label" for="name-field">Имя:</label>
+                    <input class="fieldset__input" type="text" name="name" id="name-field" placeholder="Введите ваше имя *" required>
                   </li>
-                  <li class="fieldset1__item">
-                    <label for="middlname-field">Отчество:</label>
-                    <input type="text" name="name" id="middlname-field" placeholder="Ну и отчество тоже">
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset class="fieldset2 fieldset">
-                <legend>Ваши безбашенные достижения в путешествии</legend>
-                <ul class="fieldset2__list" role="none">
-                  <li class="fieldset2__item">
-                    <input type="checkbox" name="progress-1" id="progress-1" checked>
-                    <label for="progress-1">Сделал селфи с акулой</label>
-                  </li>
-                  <li class="fieldset2__item">
-                    <input type="checkbox" name="progress-2" id="progress-2" checked>
-                    <label for="progress-2">Обгорел на пляже</label>
-                  </li>
-                  <li class="fieldset2__item">
-                    <input type="checkbox" name="progress-3" id="progress-3">
-                    <label for="progress-3">Видел Чака Норриса</label>
-                  </li>
-                  <li class="fieldset2__item">
-                    <input type="checkbox" name="progress-4" id="progress-4">
-                    <label for="progress-4">Накупил сувениров</label>
-                  </li>
-                  <li class="fieldset2__item">
-                    <input type="checkbox" name="progress-5" id="progress-5" checked>
-                    <label for="progress-5">Удержал башню</label>
-                  </li>
-                  <li class="fieldset2__item">
-                    <input type="checkbox" name="progress-6" id="progress-6">
-                    <label for="progress-6">Разгромил отель</label>
+                  <li class="fieldset__item">
+                    <label class="fieldset__label" for="middlname-field">Отчество:</label>
+                    <input class="fieldset__input" type="text" name="name" id="middlname-field" placeholder="Ну и отчество тоже">
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="fieldset3 fieldset">
+
+              <fieldset class="form__fieldset fieldset form__fieldset-grey">
+                <legend class="fieldset__legend">Ваши безбашенные достижения в путешествии</legend>
+                <ul class="fieldset__list" role="none">
+                  <li class="fieldset__item">
+                    <input class="visually-hidden fieldset__input fieldset__input--checkbox" type="checkbox" name="progress-1" id="progress-1" checked>
+                    <label class="fieldset__label-gray" for="progress-1">Сделал селфи с акулой</label>
+                  </li>
+                  <li class="fieldset__item">
+                    <input class="visually-hidden fieldset__input fieldset__input--checkbox" type="checkbox" name="progress-2" id="progress-2" checked>
+                    <label class="fieldset__label-gray" for="progress-2">Обгорел на пляже</label>
+                  </li>
+                  <li class="fieldset__item">
+                    <input class="visually-hidden fieldset__input fieldset__input--checkbox" type="checkbox" name="progress-3" id="progress-3">
+                    <label class="fieldset__label-gray" for="progress-3">Видел Чака Норриса</label>
+                  </li>
+                  <li class="fieldset__item">
+                    <input class="visually-hidden fieldset__input fieldset__input--checkbox" type="checkbox" name="progress-4" id="progress-4">
+                    <label class="fieldset__label-gray" for="progress-4">Накупил сувениров</label>
+                  </li>
+                  <li class="fieldset__item">
+                    <input class="visually-hidden fieldset__input fieldset__input--checkbox" type="checkbox" name="progress-5" id="progress-5" checked>
+                    <label class="fieldset__label-gray" for="progress-5">Удержал башню</label>
+                  </li>
+                  <li class="fieldset__item">
+                    <input class="visually-hidden fieldset__input fieldset__input--checkbox" type="checkbox" name="progress-6" id="progress-6">
+                    <label class="fieldset__label-gray" for="progress-6">Разгромил отель</label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="form__fieldset fieldset">
                 <legend class="visually-hidden">Контактные данные</legend>
-                <ul class="fieldset3__list" role="none">
-                  <li class="fieldset3__item fieldset3__item--tel">
-                    <label for="tel">Номер телефона</label>
-                    <input type="tel" name="telephone" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста" required>
+                <ul class="fieldset__list" role="none">
+                  <li class="fieldset__item fieldset__item--tel">
+                    <label class="fieldset__label" for="tel">Номер телефона</label>
+                    <input class="fieldset__input" type="tel" name="telephone" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста" required>
                   </li>
-                  <li class="fieldset3__item fieldset3__item--mail">
-                    <label for="email">Адрес почты</label>
-                    <input type="email" id="email" name="mail" placeholder="Введите почту *" required>
+                  <li class="fieldset__item fieldset__item--mail">
+                    <label class="fieldset__label" for="email">Адрес почты</label>
+                    <input class="fieldset__input" type="email" id="email" name="mail" placeholder="Введите почту *" required>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="fieldset4 fieldset">
-                <legend>С каким приложением путешествовали?</legend>
-                <label><input type="radio" name="ios">Pink для iOS</label>
-                <br>
-                <label><input type="radio" name="android">Pink на Android</label>
-                <br>
-                <label><input type="radio" name="windows">Windows Phone</label>
+
+              <fieldset class="form__fieldset fieldset form__fieldset-grey">
+                <legend class="fieldset__legend">С каким приложением путешествовали?</legend>
+                <ul class="fieldset__list" role="none">
+                  <li class="fieldset__item">
+                    <label class="fieldset__label-gray"><input class="visually-hidden fieldset__input fieldset__input--radio" type="radio" name="ios">Pink для iOS</label>
+                  </li>
+                  <li class="fieldset__item">
+                    <label class="fieldset__label-gray"><input class="visually-hidden fieldset__input fieldset__input--radio" type="radio" name="android">Pink на Android</label>
+                  </li>
+                  <li class="fieldset__item">
+                    <label class="fieldset__label-gray"><input class="visually-hidden fieldset__input fieldset__input--radio" type="radio" name="windows">Windows Phone</label>
+                  </li>
+                </ul>
               </fieldset>
-              <div class="reviews-form fieldset">
-                <label for="reviews-field">Опишите свои эмоции</label>
-                <textarea name="reviews" id="reviews-field" rows="3" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <div class="form__fieldset fieldset">
+                <label class="fieldset__legend" for="reviews-field">Опишите свои эмоции</label><br>
+                <textarea class="fieldset__input" name="reviews" id="reviews-field" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
-              <input type="submit" value="Отправить форму">
-              <p class="form-group__legend"><span>*</span> - Обязательные поля</p>
+              <button class="form__button" type="submit">Отправить форму</button>
+              <p class="form__legend"><span class="form__legend-mark">*</span> - Обязательные поля</p>
             </form>
-            <section class="failure failure-modal">
-              <div class="failure__wrapper">
-                <h2 class="failure__title">Что-то пошло не так!</h2>
-                <p class="failure__text">Проверьте поля, выделенные красным цветом, скорее всего вы забыли их заполнить</p>
-                <button class="failure__close" type="button">ok</button>
-              </div>
-            </section>
-            <section class="success success-modal">
-              <div class="success__wrapper">
-                <h2 class="success__title">Ваша заявка отправлена</h2>
-                <p class="success__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас</p>
-                <button class="success__close" type="button">Закрыть окно</button>
-              </div>
-            </section>
           </div>
         </div>
       </main>
+
       <footer class="page-footer">
         <div class="page-footer__wrapper">
-          <div class="page-footer__contacts contacts">
-            <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-            <p class="contacts__content">Звоните:<a href="#">+7(812)555-66-66</a></p>
-            <p class="contacts__content">Пишите:<a href="#">mail@htmlacademy.ru</a></p>
-            <p class="contacts__content">Приезжайте в гости:<span>ул.Большая Конюшенная, 19/8</span></p>
-            <img src="img/map.png" alt="Мы на карте" width="320" height="200">
-          </div>
           <a class="page-footer__logo">
-            <img src="img/logotype-mobile.svg" alt="PINK" width="74" height="23" >
+            <img src="img/logotype-mobile.svg" alt="PINK" width="74" height="23">
           </a>
+
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
@@ -160,11 +153,28 @@
               </li>
             </ul>
           </div>
+
           <div class="page-footer__copyright copyright">
             <b class="copyright__text">Разработано</b>
-            <a class="copyright__link" href="#">HTML Academy</a>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </div>
         </div>
       </footer>
+
+      <section class="modal modal__failure">
+              <div class="modal__wrapper">
+                <h2 class="modal__title">Что-то пошло не так!</h2>
+                <p class="modal__text">Проверьте поля, выделенные красным цветом, скорее всего вы забыли их заполнить</p>
+                <button class="modal__close" type="button">ok</button>
+              </div>
+            </section>
+
+            <section class="modal modal__success">
+              <div class="modal__wrapper">
+                <h2 class="modal__title">Ваша заявка отправлена</h2>
+                <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас</p>
+                <button class="modal__close" type="button">Закрыть окно</button>
+              </div>
+            </section>
     </body>
 </html>
