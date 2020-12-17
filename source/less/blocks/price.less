@@ -1,5 +1,35 @@
+.price__wrapper {
+  .wrapper();
+  outline: 2px solid blue;
+  outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    .wrapper-tablet();
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    .wrapper-desktop();
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .price__list {
   border-spacing: 0;
+}
+
+.price__toggles {
+  background-color: @light-gray;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .row-1 {

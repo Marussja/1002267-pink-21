@@ -1,20 +1,21 @@
-.page-header {
+.page-footer__wrapper {
   .wrapper();
   display: flex;
   flex-direction: column;
-  background-color: @grey-blue;
-  outline: 2px solid red;
+  outline: 2px solid green;
   outline-offset: -5px;
 
   @media (min-width: @tablet-width) {
     .wrapper-tablet();
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
   }
 
   @media (min-width: @desktop-width) {
     .wrapper-desktop();
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
   }
 }

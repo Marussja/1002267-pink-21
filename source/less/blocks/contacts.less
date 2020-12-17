@@ -1,3 +1,37 @@
+.contacts__wrapper {
+  .wrapper();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 2px solid tomato;
+  outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    .wrapper-tablet();
+  }
+
+  @media (min-width: @desktop-width) {
+    .wrapper-desktop();
+  }
+}
+
+.contacts__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
 .contacts__title {
   font-style: normal;
   font-weight: 300;
