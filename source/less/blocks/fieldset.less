@@ -18,6 +18,40 @@
   list-style: none;
 }
 
+.fieldset__list-number {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.fieldset__item-tel {
+  @media (min-width: @desktop-width) {
+    min-width: 50%;
+  }
+}
+
+.fieldset__item-mail {
+  @media (min-width: @desktop-width) {
+    min-width: 50%;
+  }
+}
+
+.fieldset__list-progress {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.fieldset__input--checkbox {
+  @media (min-width: @desktop-width) {
+    min-width: 275px;
+  }
+}
+
 .fieldset__input::placeholder {
   .label-grey();
 }

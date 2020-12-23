@@ -73,7 +73,7 @@
 
               <fieldset class="form__fieldset-progress fieldset form__fieldset-grey">
                 <legend class="fieldset__legend" align="center">Ваши безбашенные достижения в путешествии</legend>
-                <ul class="fieldset__list" role="none">
+                <ul class="fieldset__list fieldset__list-progress" role="none">
                   <li class="fieldset__item">
                     <input class="visually-hidden fieldset__input fieldset__input--checkbox" type="checkbox" name="progress-1" id="progress-1" checked>
                     <label class="fieldset__label-gray" for="progress-1">Сделал селфи с акулой</label>
@@ -103,14 +103,14 @@
 
               <fieldset class="form__fieldset-number fieldset">
                 <legend class="visually-hidden fieldset__legend" align="center">Контактная информация</legend>
-                <ul class="fieldset__list" role="none">
-                  <li class="fieldset__item fieldset__item--tel">
+                <ul class="fieldset__list fieldset__list-number" role="none">
+                  <li class="fieldset__item fieldset__item-tel">
+                    <input class="fieldset__input" type="tel" name="telephone" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста" required><br>
                     <label class="fieldset__label" for="tel">Номер телефона</label>
-                    <input class="fieldset__input" type="tel" name="telephone" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста" required>
                   </li>
-                  <li class="fieldset__item fieldset__item--mail">
+                  <li class="fieldset__item fieldset__item-mail">
+                    <input class="fieldset__input" type="email" id="email" name="mail" placeholder="Введите почту *" required><br>
                     <label class="fieldset__label" for="email">Адрес почты</label>
-                    <input class="fieldset__input" type="email" id="email" name="mail" placeholder="Введите почту *" required>
                   </li>
                 </ul>
               </fieldset>
