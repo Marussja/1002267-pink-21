@@ -1,5 +1,17 @@
 .fieldset {
-  border: none;
+  @media (min-width: @mobile-width-only) {
+    border: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    border: 2px solid @light-lightgray;
+    border-radius: 4px;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: 2px solid @light-lightgray;
+    border-radius: 4px;
+  }
 }
 
 .fieldset__list {
@@ -16,6 +28,7 @@
 }
 
 .fieldset__legend {
+  padding: 0 38px;
   .legend-pink();
   text-transform: uppercase;
 }
