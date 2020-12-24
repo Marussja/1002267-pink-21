@@ -6,17 +6,20 @@
         <title>Конкурс на самое безбашенное путешествие с Пинк</title>
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
-    <body class="page__body">
+
+    <body class="page-body">
+
       <header class="page-header">
-        <a class="page-header__logo">
-          <img src="img/logotype-mobile.svg" alt="PINK" width="74" height="23">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="main-nav__wrapper">
+        <div class="page-header__wrapper">
+          <a class="page-header__logo">
+            <img src="img/logotype-mobile.svg" alt="PINK" width="74" height="23">
+          </a>
+
+          <nav class="main-nav">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a href="#">
+              <li class="site-list__item site-list__item--active">
+                <a>
                   Главная
                 </a>
               </li>
@@ -25,8 +28,8 @@
                   Фотографии
                 </a>
               </li>
-              <li class="site-list__item site-list__item--active">
-                <a>
+              <li class="site-list__item">
+                <a href="#">
                   Конкурс
                 </a>
               </li>
@@ -36,19 +39,21 @@
                 </a>
               </li>
             </ul>
-          </div>
-        </nav>
+          </nav>
+        </div>
       </header>
+
       <main class="page-form">
         <div class="form-group">
           <div class="form-group__wrapper">
             <div class="form-group__background">
               <h1 class="form-group__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
             </div>
-            <p class="form-group__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+            <p class="form-group__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!<span class="form-group__addition">Пожалуйста, заполните форму ниже:</span></p>
 
             <form class="form" action="https://echo.htmlacademy.ru" method="post">
-              <fieldset class="form__fieldset fieldset">
+
+              <fieldset class="form__fieldset-name fieldset form__fieldset-noborder">
                 <legend class="visually-hidden">Анкетные данные</legend>
                 <ul class="fieldset__list" role="none">
                   <li class="fieldset__item">
@@ -66,9 +71,9 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="form__fieldset fieldset form__fieldset-grey">
-                <legend class="fieldset__legend">Ваши безбашенные достижения в путешествии</legend>
-                <ul class="fieldset__list" role="none">
+              <fieldset class="form__fieldset-progress fieldset form__fieldset-grey">
+                <legend class="fieldset__legend" align="center">Ваши безбашенные достижения в путешествии</legend>
+                <ul class="fieldset__list fieldset__list-progress" role="none">
                   <li class="fieldset__item">
                     <input class="visually-hidden fieldset__input fieldset__input--checkbox" type="checkbox" name="progress-1" id="progress-1" checked>
                     <label class="fieldset__label-gray" for="progress-1">Сделал селфи с акулой</label>
@@ -96,22 +101,22 @@
                 </ul>
               </fieldset>
 
-              <fieldset class="form__fieldset fieldset">
-                <legend class="visually-hidden">Контактные данные</legend>
-                <ul class="fieldset__list" role="none">
-                  <li class="fieldset__item fieldset__item--tel">
+              <fieldset class="form__fieldset-number fieldset">
+                <legend class="visually-hidden fieldset__legend" align="center">Контактная информация</legend>
+                <ul class="fieldset__list fieldset__list-number" role="none">
+                  <li class="fieldset__item fieldset__item-tel">
+                    <input class="fieldset__input" type="tel" name="telephone" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста" required><br>
                     <label class="fieldset__label" for="tel">Номер телефона</label>
-                    <input class="fieldset__input" type="tel" name="telephone" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Номер, пожалуйста" required>
                   </li>
-                  <li class="fieldset__item fieldset__item--mail">
+                  <li class="fieldset__item fieldset__item-mail">
+                    <input class="fieldset__input" type="email" id="email" name="mail" placeholder="Введите почту *" required><br>
                     <label class="fieldset__label" for="email">Адрес почты</label>
-                    <input class="fieldset__input" type="email" id="email" name="mail" placeholder="Введите почту *" required>
                   </li>
                 </ul>
               </fieldset>
 
-              <fieldset class="form__fieldset fieldset form__fieldset-grey">
-                <legend class="fieldset__legend">С каким приложением путешествовали?</legend>
+              <fieldset class="form__fieldset-device fieldset form__fieldset-grey">
+                <legend class="fieldset__legend" align="center">С каким приложением путешествовали?</legend>
                 <ul class="fieldset__list" role="none">
                   <li class="fieldset__item">
                     <label class="fieldset__label-gray"><input class="visually-hidden fieldset__input fieldset__input--radio" type="radio" name="ios">Pink для iOS</label>
@@ -124,12 +129,14 @@
                   </li>
                 </ul>
               </fieldset>
-              <div class="form__fieldset fieldset">
-                <label class="fieldset__legend" for="reviews-field">Опишите свои эмоции</label><br>
+              <fieldset class="form__fieldset-reviews fieldset">
+                <legend class="fieldset__legend" align="center">Опишите свои эмоции</legend>
                 <textarea class="fieldset__input" name="reviews" id="reviews-field" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </fieldset>
+              <div class="form__button-group">
+                <button class="form__button" type="submit">Отправить форму</button>
+                <p class="form__legend"><span class="form__legend-mark">*</span> - Обязательные поля</p>
               </div>
-              <button class="form__button" type="submit">Отправить форму</button>
-              <p class="form__legend"><span class="form__legend-mark">*</span> - Обязательные поля</p>
             </form>
           </div>
         </div>

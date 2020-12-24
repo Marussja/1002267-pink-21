@@ -1,12 +1,29 @@
-.form-group {
-  margin-left: auto;
-  margin-right: auto;
+.form-group__wrapper {
+  .wrapper();
+  display: flex;
+  flex-direction: column;
+  outline: 2px solid purple;
+  outline-offset: -5px;
+
+  @media (min-width: @tablet-width) {
+    .wrapper-tablet();
+  }
+
+  @media (min-width: @desktop-width) {
+    .wrapper-desktop();
+  }
 }
 
-.form-group__wrapper {
-  margin: 0 auto;
-  padding: 0 20px;
-  text-align: center;
+.form-group__addition {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
 }
 
 .form-group__background {
