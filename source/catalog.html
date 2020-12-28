@@ -6,7 +6,7 @@
         <title>Фотографии</title>
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
-    <body class="page__body">
+    <body class="page-body">
       <header class="page-header">
         <a class="page-header__logo">
           <img src="img/logotype-mobile.svg" alt="PINK" width="74" height="23">
@@ -43,116 +43,122 @@
       <main class="page-main">
 
         <div class="photo-content">
-          <div class="photo-content__wrapper">
-            <div class="photo-content__background">
-              <h1 class="photo-content__title">Фотографии пользователей</h1>
-            </div>
-            <p class="photo-content__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <div class="photo-content__background">
+            <h1 class="photo-content__title">Фотографии пользователей</h1>
+          </div>
+          <p class="photo-content__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 
-            <blockquote class="photo-content__item photo-item photo-item--panorama">
-              <div class="photo-item__autor-info">
-                <a class="photo-item__link" href="#">
-                  <img src="img/panorama.png" alt="Фото" width="320" height="137">
-                </a><br>
+          <div class="photo-content__item-panorama photo-item">
+            <a href="#">
+              <img class="photo-item__panorama" src="img/panorama.png" alt="Фото" width="320" height="137">
+            </a>
+            <div class="photo-item__panorama-wrapper">
+              <div class="photo-item__panorama-info">
                 <cite class="photo-item__autor-name">Анна</cite>
                 <time class="photo-item__autor-time" datetime="2004-07-24T18:18">(5 минут назад)</time>
                 <p class="photo-item__autor-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <div class="photo-item__stats photo-item__stats-panorama">
+                  <button class="photo-item__heart" type="button">Сердечко</button>
+                  <span class="photo-item__likes-number">Нравится: 215</span>
+                </div>
               </div>
-              <div class="photo-item__stats">
-                <button class="photo-item__heart" type="button">Сердечко</button>
-                <span class="photo-item__likes-number">Нравится: 215</span>
-              </div>
-            </blockquote>
+            </div>
+          </div>
 
-            <blockquote class="photo-content__item photo-item">
-              <div class="photo-item__autor-info">
-                <a class="photo-item__link" href="#">
-                  <img src="img/photo-1.png" alt="Фото" width="280" height="180">
-                </a><br>
-                <cite class="photo-item__autor-name">Левон</cite>
-                <time class="photo-item__autor-time" datetime="2004-07-24T18:18">(5 часов назад)</time>
-                <p class="photo-item__autor-text">Вчера он на луну летал, сегодня в руки к нам попал</p>
-              </div>
-              <div class="photo-item__stats">
-                <button class="photo-item__heart" type="button">Сердечко</button>
-                <span class="photo-item__likes-number">Нравится: 356</span>
-              </div>
-            </blockquote>
+          <div class="photo-content__grid-wrapper">
+            <div class="photo-content__grid">
 
-            <blockquote class="photo-content__item photo-item">
-              <div class="photo-item__autor-info">
-                <a class="photo-item__link" href="#">
-                  <img src="img/photo-2.png" alt="Фото" width="280" height="180">
-                </a><br>
-                <cite class="photo-item__autor-name">Антон</cite>
-                <time class="photo-item__autor-time" datetime="2004-07-24T18:18">(12 часов назад)</time>
-                <p class="photo-item__autor-text">Соседи будут рады!</p>
+              <div class="photo-content__item photo-item">
+                <a href="#">
+                  <img class="photo-item__img" src="img/photo-1.png" alt="Фото" width="280" height="180">
+                </a>
+                <div class="photo-item__autor-info">
+                  <cite class="photo-item__autor-name">Левон</cite>
+                  <time class="photo-item__autor-time" datetime="2004-07-24T18:18">(5 часов назад)</time>
+                  <p class="photo-item__autor-text">Вчера он на луну летал, сегодня в руки к нам попал</p>
+                  <div class="photo-item__stats">
+                    <button class="photo-item__heart" type="button">Сердечко</button>
+                    <span class="photo-item__likes-number">Нравится: 356</span>
+                  </div>
+                </div>
               </div>
-              <div class="photo-item__stats">
-                <button class="photo-item__heart" type="button">Сердечко</button>
-                <span class="photo-item__likes-number">Нравится: 666</span>
-              </div>
-            </blockquote>
 
-            <blockquote class="photo-content__item photo-item">
-              <div class="photo-item__autor-info">
-                <a class="photo-item__link" href="#">
-                  <img src="img/photo-3.jpg" alt="Фото" width="280" height="180">
-                </a><br>
-                <cite class="photo-item__autor-name">Борис</cite>
-                <time class="photo-item__autor-time" datetime="2004-07-24T18:18">(20 часов назад)</time>
-                <p class="photo-item__autor-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="photo-content__item photo-item">
+                <a href="#">
+                  <img class="photo-item__img" src="img/photo-2.png" alt="Фото" width="280" height="180">
+                </a>
+                <div class="photo-item__autor-info">
+                  <cite class="photo-item__autor-name">Антон</cite>
+                  <time class="photo-item__autor-time" datetime="2004-07-24T18:18">(12 часов назад)</time>
+                  <p class="photo-item__autor-text">Соседи будут рады!</p>
+                  <div class="photo-item__stats">
+                    <button class="photo-item__heart" type="button">Сердечко</button>
+                    <span class="photo-item__likes-number">Нравится: 666</span>
+                  </div>
+                </div>
               </div>
-              <div class="photo-item__stats">
-                <button class="photo-item__heart" type="button">Сердечко</button>
-                <span class="photo-item__likes-number">Нравится: 215</span>
-              </div>
-            </blockquote>
 
-            <blockquote class="photo-content__item photo-item">
-              <div class="photo-item__autor-info">
-                <a class="photo-item__link" href="#">
-                  <img src="img/photo-4.jpg" alt="Фото" width="280" height="180">
-                </a><br>
-                <cite class="photo-item__autor-name">Сергей</cite>
-                <time class="photo-item__autor-time" datetime="2004-07-24T18:18">(25 часов назад)</time>
-                <p class="photo-itemautor-text">Самая кубанская в мире!</p>
+              <div class="photo-content__item photo-item">
+                <a href="#">
+                  <img class="photo-item__img" src="img/photo-3.jpg" alt="Фото" width="280" height="180">
+                </a>
+                <div class="photo-item__autor-info">
+                  <cite class="photo-item__autor-name">Борис</cite>
+                  <time class="photo-item__autor-time" datetime="2004-07-24T18:18">(20 часов назад)</time>
+                  <p class="photo-item__autor-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                  <div class="photo-item__stats">
+                    <button class="photo-item__heart" type="button">Сердечко</button>
+                    <span class="photo-item__likes-number">Нравится: 215</span>
+                  </div>
+                </div>
               </div>
-              <div class="photo-item__stats">
-                <button class="photo-item__heart" type="button">Сердечко</button>
-                <span class="photo-item__likes-number">Нравится: 4</span>
-              </div>
-            </blockquote>
 
-            <blockquote class="photo-content__item photo-item">
-              <div class="photo-item__autor-info">
-                <a class="photo-item__link" href="#">
-                  <img src="img/photo-5.jpg" alt="Фото" width="280" height="180">
-                </a><br>
-                <cite class="photo-item__autor-name">Максим</cite>
-                <time class="photo-item__autor-time" datetime="2004-07-24T18:18">(40 часов назад)</time>
-                <p class="photo-item__autor-text">Где снег-то?</p>
+              <div class="photo-content__item photo-item">
+                <a href="#">
+                  <img class="photo-item__img" src="img/photo-4.jpg" alt="Фото" width="280" height="180">
+                </a>
+                <div class="photo-item__autor-info">
+                  <cite class="photo-item__autor-name">Сергей</cite>
+                  <time class="photo-item__autor-time" datetime="2004-07-24T18:18">(25 часов назад)</time>
+                  <p class="photo-itemautor-text">Самая кубанская в мире!</p>
+                  <div class="photo-item__stats">
+                    <button class="photo-item__heart" type="button">Сердечко</button>
+                    <span class="photo-item__likes-number">Нравится: 4</span>
+                  </div>
+                </div>
               </div>
-              <div class="photo-item__stats">
-                <button class="photo-item__heart" type="button">Сердечко</button>
-                <span class="photo-item__likes-number">Нравится: 150</span>
-              </div>
-            </blockquote>
 
-            <blockquote class="photo-content__item photo-item">
-              <div class="photo-item__autor-info">
-                <a class="photo-item__link" href="#">
-                  <img src="img/photo-6.jpg" alt="Фото" width="280" height="180">
-                </a><br>
-                <cite class="photo-item__autor-name">Надежда</cite>
-                <time class="photo-item__autor-time" datetime="2004-07-24T18:18">(45 часов назад)</time>
-                <p class="photo-item__autor-text">Всем GM и взаимные лайки!</p>
+              <div class="photo-content__item photo-item">
+                <a href="#">
+                  <img class="photo-item__img" src="img/photo-5.jpg" alt="Фото" width="280" height="180">
+                </a>
+                <div class="photo-item__autor-info">
+                  <cite class="photo-item__autor-name">Максим</cite>
+                  <time class="photo-item__autor-time" datetime="2004-07-24T18:18">(40 часов назад)</time>
+                  <p class="photo-item__autor-text">Где снег-то?</p>
+                  <div class="photo-item__stats">
+                    <button class="photo-item__heart" type="button">Сердечко</button>
+                    <span class="photo-item__likes-number">Нравится: 150</span>
+                  </div>
+                </div>
               </div>
-              <div class="photo-item__stats">
-                <button class="photo-item__heart" type="button">Сердечко</button>
-                <span class="photo-item__likes-number">Нравится: 2560</span>
+
+              <div class="photo-content__item photo-item">
+                <a href="#">
+                  <img class="photo-item__img" src="img/photo-6.jpg" alt="Фото" width="280" height="180">
+                </a>
+                <div class="photo-item__autor-info">
+                  <cite class="photo-item__autor-name">Надежда</cite>
+                  <time class="photo-item__autor-time" datetime="2004-07-24T18:18">(45 часов назад)</time>
+                  <p class="photo-item__autor-text">Всем GM и взаимные лайки!</p>
+                  <div class="photo-item__stats">
+                    <button class="photo-item__heart" type="button">Сердечко</button>
+                    <span class="photo-item__likes-number">Нравится: 2560</span>
+                  </div>
+                </div>
               </div>
-            </blockquote>
+
+            </div>
           </div>
         </div>
 
@@ -162,29 +168,32 @@
             <p class="upload__text">Затмите их всех!</p>
             <p class="upload__text">Выкладывайте все, что накопилось в<br>телефоне!</p>
 
-            <form class="upload__form" action="https://echo.htmlacademy.ru" method="get">
+            <form class="upload__form-group" action="https://echo.htmlacademy.ru" method="get">
               <div class="upload__image">
-                <input  type="file" name="myphoto">
+                <input type="file" name="myphoto" id="myphoto">
                 <label class="upload__label" for="myphoto"></label>
               </div>
-              <ul class="upload__list" role="none">
-                <li class="upload__item upload__item--croup">
-                  <label class="visually-hidden" for="croup">Кадрировать фото</label>
-                  <input class="upload__range" type="range" id="croup" name="croup" min="1" max="100" step="1" value="70">
-                </li>
-                <li class="upload__item upload__item--fill">
-                  <label class="visually-hidden" for="fill">Изменить цвет фото</label>
-                  <input class="upload__range" type="range" id="fill" name="fill" min="1" max="100" step="1" value="15">
-                </li>
-                <li class="upload__item upload__item--contrast">
-                  <label class="visually-hidden" for="contrast">Изменить контраст фото</label>
-                  <input class="upload__range" type="range" id="contrast" name="contrast" min="1" max="100" step="1" value="50">
-                </li>
-              </ul>
-              <button class="upload__button-post" type="submit">Запостить</button>
-              <button class="upload__button-cancel" type="reset">Отмена</button>
+              <div class="upload__form">
+                <ul class="upload__list" role="none">
+                  <li class="upload__item upload__item--croup">
+                    <label class="visually-hidden" for="croup">Кадрировать фото</label>
+                    <input class="upload__range" type="range" id="croup" name="croup" min="1" max="100" step="1" value="70">
+                  </li>
+                  <li class="upload__item upload__item--fill">
+                    <label class="visually-hidden" for="fill">Изменить цвет фото</label>
+                    <input class="upload__range" type="range" id="fill" name="fill" min="1" max="100" step="1" value="15">
+                  </li>
+                  <li class="upload__item upload__item--contrast">
+                    <label class="visually-hidden" for="contrast">Изменить контраст фото</label>
+                    <input class="upload__range" type="range" id="contrast" name="contrast" min="1" max="100" step="1" value="50">
+                  </li>
+                </ul>
+                <div class="upload__button">
+                  <button class="upload__button-post" type="submit">Запостить</button>
+                  <button class="upload__button-cancel" type="reset">Отмена</button>
+                </div>
+              </div>
             </form>
-
           </div>
         </section>
       </main>
