@@ -1,8 +1,10 @@
 .reviews__wrapper {
   .wrapper();
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: center;
   outline: 2px solid orange;
   outline-offset: -5px;
-  text-align: center;
 
   @media (min-width: @tablet-width) {
     .wrapper-tablet();
@@ -11,6 +13,11 @@
   @media (min-width: @desktop-width) {
     .wrapper-desktop();
   }
+}
+
+.reviews__list {
+  list-style: none;
+  padding-left: 0;
 }
 
 .reviews__autor-name {
@@ -31,6 +38,7 @@
 
 .reviews__legend {
   .reviews-text();
+  display: none;
 
   @media (min-width: @tablet-width) {
     order: 3;

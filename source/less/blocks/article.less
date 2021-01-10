@@ -1,15 +1,55 @@
 .article {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .article__wrapper {
   @media (min-width: @tablet-width) {
     .wrapper-tablet();
-    display: flex;
   }
 
   @media (min-width: @desktop-width) {
     .wrapper-tablet();
-    display: flex;
   }
+}
+
+.article__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: @black;
+}
+
+.article::before {
+  content: "24";
+  position: relative;
+  left: 120px;
+  top: 120px;
+  width: 238px;
+  height: 276px;
+  background-image: url("img/timer.svg");
+  color: @pink;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+}
+
+.article__content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: @grey-blue;
+}
+
+.article__more {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: @pink;
 }
