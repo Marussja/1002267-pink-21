@@ -2,21 +2,22 @@
   max-width: 320px;
   min-height: 66px;
   margin: 0 auto;
+  position: relative;
+  top: 72px;
+  left: 0;
   background-color: @black-transparent;
-  display: flex;
-  flex-direction: column;
 
   @media (min-width: @tablet-width) {
     max-width: 660px;
     margin: 0 auto;
     min-height: 110px;
+    top: 110px;
   }
 
   @media (min-width: @desktop-width) {
     max-width: 980px;
     margin: 0 auto;
-    flex-direction: row;
-    justify-content: space-between;
+    top: 114px;
     box-sizing: border-box;
     background-color: @black-transparent;
   }
@@ -28,7 +29,7 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     box-sizing: border-box;
   }
 }

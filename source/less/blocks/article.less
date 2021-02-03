@@ -8,12 +8,27 @@
 
 .article__wrapper {
   @media (min-width: @tablet-width) {
+    outline: 2px solid tomato;
+    outline-offset: -2px;
     .wrapper-tablet();
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "image contain";
   }
 
   @media (min-width: @desktop-width) {
-    .wrapper-tablet();
+    .wrapper-desktop();
+    background-color: @light-lightgray;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "image contain contain";
   }
+}
+
+.article__contain {
+  grid-area: contain;
 }
 
 .article__title {
@@ -24,18 +39,23 @@
   color: @black;
 }
 
-.article::before {
-  content: "24";
-  position: relative;
-  left: 120px;
-  top: 120px;
-  width: 238px;
-  height: 276px;
-  background-image: url("img/timer.svg");
-  color: @pink;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 96px;
+.article__image {
+  grid-area: image;
+  outline: 2px solid orange;
+  outline-offset: -5px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 238px;
+    height: 276px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 298px;
+    height: 345px;
+    padding: 30px 30px;
+  }
 }
 
 .article__content {

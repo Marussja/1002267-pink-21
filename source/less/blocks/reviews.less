@@ -20,20 +20,21 @@
   padding-left: 0;
 }
 
+.reviews__item {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column-reverse;
+  }
+}
+
 .reviews__autor-name {
   color: @black;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
-
-  @media (min-width: @tablet-width) {
-    order: 2;
-  }
-
-  @media (min-width: @desktop-width) {
-    order: 2;
-  }
 }
 
 .reviews__legend {
@@ -41,11 +42,7 @@
   display: none;
 
   @media (min-width: @tablet-width) {
-    order: 3;
-  }
-
-  @media (min-width: @desktop-width) {
-    order: 3;
+    display: block;
   }
 }
 
