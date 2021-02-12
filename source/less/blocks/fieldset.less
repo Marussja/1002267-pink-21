@@ -1,4 +1,6 @@
 .fieldset {
+  margin-top: 40px;
+
   @media (min-width: @mobile-width-only) {
     border: none;
   }
@@ -16,6 +18,12 @@
 
 .fieldset__list {
   list-style: none;
+  padding-left: 0;
+}
+
+.fieldset__input {
+  width: 100%;
+  min-height: 59px;
 }
 
 .fieldset__list-number {
@@ -40,33 +48,56 @@
 }
 
 .fieldset__list-progress {
+  display: grid;
+  gap: 47px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 54px;
+    padding-left: 60px;
+    margin: 0 auto;
+  }
+
   @media (min-width: @desktop-width) {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.fieldset__input--checkbox {
-  @media (min-width: @desktop-width) {
-    min-width: 275px;
+.fieldset__list-device {
+  display: grid;
+  gap: 47px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 47px;
+    padding-left: 60px;
+    margin: 0 auto;
   }
 }
 
+/*.fieldset__input-checkbox {
+  @media (min-width: @desktop-width) {
+    min-width: 275px;
+  }
+}*/
+
 .fieldset__input::placeholder {
   .label-grey();
+  padding-left: 20px;
 }
 
 .fieldset__label {
   .label-pink();
   text-transform: uppercase;
+  padding-left: 43px;
+  padding-top: 29px;
+  padding-bottom: 17px;
 }
 
 .fieldset__legend {
-  padding: 0 38px;
   .legend-pink();
   text-transform: uppercase;
 }
 
 .fieldset__label-gray {
   .label-grey();
+  padding: 20px;
 }

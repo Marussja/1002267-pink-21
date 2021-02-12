@@ -27,9 +27,18 @@
 }
 
 .form-group__background {
-  background-image: url("img/back.png");
+  background: url("../img/back-mobile.jpg") center top no-repeat;
   min-height: 237px;
-  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background: url("../img/back-tablet.jpg") center top no-repeat;
+    min-height: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background: url("../img/back-desktop.jpg") center top no-repeat;
+    min-height: 394px;
+  }
 }
 
 .form-group__title {
@@ -40,6 +49,18 @@
   color: @white;
   padding-top: 102px;
   padding-bottom: 51px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 191px;
+    font-size: 50px;
+    line-height: 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 184px;
+  }
 }
 
 .form-group__text {
@@ -48,4 +69,6 @@
   line-height: 30px;
   color: @grey-blue;
   text-align: center;
+  background-color: @white;
+  padding: 40px 20px 0 20px;
 }
