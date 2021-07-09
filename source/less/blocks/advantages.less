@@ -7,16 +7,13 @@
   outline-offset: -5px;
   .wrapper();
   padding: 0 20px;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  background-image: url("../../img/grey-background.jpg");
+  background-image: url("../img/grey-background.jpg");
   background-repeat: no-repeat;
-  padding-left: 0;
   background-position: bottom center;
-  background-size: 100% 87%;
+  background-size: 90% 84%;
   overflow: hidden;
 
   @media (min-width: @tablet-width) {
@@ -44,6 +41,7 @@
 .advantages__list {
   list-style: none;
   margin-top: 70px;
+  padding-left: 0;
   grid-area: list;
 
   @media (min-width: @desktop-width) {
@@ -53,10 +51,12 @@
   }
 }
 
-.advantages__images {
-  display: flex;
+.advantages__image-list {
+  list-style: none;
+  padding-left: 0;
 
   @media (min-width: @desktop-width) {
+    display: flex;
     justify-content: space-around;
     margin-left: 20px;
   }
@@ -74,12 +74,17 @@
 .advantages__image-smile {
   display: block;
   grid-area: smile;
-  margin: 10px;
+  margin: 0 auto;
+  min-height: 320px;
+  background: url("../img/image-smile-phone.jpg") center center no-repeat, url("../img/iphone-3.png") center center no-repeat;
 }
 
 .advantages__contain {
   grid-area: content;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .advantages__title {
@@ -88,6 +93,10 @@
   font-size: 18px;
   line-height: 24px;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 
   @media (min-width: @tablet-width) {
     text-align: left;
@@ -103,6 +112,8 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: @tablet-width) {
     text-align: left;
@@ -117,6 +128,9 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 
   @media (min-width: @mobile-width-only) {
     display: inline-block;
