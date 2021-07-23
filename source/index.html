@@ -170,34 +170,33 @@
         <div class="price">
           <div class="price__wrapper slider">
             <!--<h2 class="visually-hidden">Тарифы</h2>-->
-            <div class="price__features slider__list">
-              <table class="price__list slider__item">
-                <tr class="price__item row-1">
-                  <th class="col-1"></th>
-                  <th class="price__content col-2">База<br><span class="row-1__info">1,99 USD</span></th>
-                  <th class="price__content col-3">Стандарт<br><span class="row-1__info">3,99 USD</span></th>
-                  <th class="price__content col-4">Анлим<br><span class="row-1__info">9,99 USD</span></th>
+            <table class="price__list">
+              <tr class="price__item">
+                <th class="price__hide"></th>
+                <th class="price__tariff">База<p class="price__cost">1,99 USD</p></th>
+                <th class="price__tariff price__tariff-hit price__tariff-hit--ribbon">Стандарт<p class="price__cost">3,99 USD</p></th>
+                <th class="price__tariff">Анлим<p class="price__cost">9,99 USD</p></th>
                 </tr>
-                <tr class="price__item">
-                  <td class="price__content col-1">Розовый фильтр</td>
-                  <td class="price__content col-2">Розовый фильтр<span class="check"></span></td>
-                  <td class="price__content col-3">Розовый фильтр<span class="check"></span></td>
-                  <td class="price__content col-4">Розовый фильтр<span class="check"></span></td>
-                </tr>
-                <tr class="price__item">
-                  <td class="price__content col-1">Смайлики</td>
-                  <td class="price__content col-2">Смайлики<span class="cross"></span></td>
-                  <td class="price__content col-3">Смайлики<span class="check"></span></td>
-                  <td class="price__content col-4">Смайлики<span class="check"></span></td>
-                </tr>
-                <tr class="price__item">
-                  <td class="price__content col-1">Комментарии</td>
-                  <td class="price__content col-2">Комментарии<span class="cross"></span></td>
-                  <td class="price__content col-3">Комментарии<span class="cross"></span></td>
-                  <td class="price__content col-4">Комментарии<span class="check"></span></td>
-                </tr>
-              </table>
-            </div>
+              <tr>
+                <td class="price__content price__hide">Розовый фильтр</td>
+                <td class="price__content price__check">Розовый фильтр</td>
+                <td class="price__content price__check">Розовый фильтр</td>
+                <td class="price__content price__check">Розовый фильтр</td>
+              </tr>
+              <tr>
+                <td class="price__content price__hide">Смайлики</td>
+                <td class="price__content price__cross">Смайлики</td>
+                <td class="price__content price__check">Смайлики</td>
+                <td class="price__content price__check">Смайлики</td>
+              </tr>
+              <tr>
+                <td class="price__content price__hide">Комментарии</td>
+                <td class="price__content price__cross">Комментарии</td>
+                <td class="price__content price__cross">Комментарии</td>
+                <td class="price__content price__check">Комментарии</td>
+              </tr>
+            </table>
+
             <p class="price__toggles slider__toggles">
               <button class="slider__toggle" type="button">1</button>
               <button class="slider__toggle slider__toggle--activ" type="button">2</button>
